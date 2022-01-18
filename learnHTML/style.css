@@ -7,3 +7,16 @@ del {
 .note {
   color: peru;
 }
+h1 {
+  color: #ff1f5a;
+}
+h2 {
+  color: #2cb978;
+}
+.emoji {
+  font-size: 25px;
+}
+label {
+  color: #bf8200;
+  font-weight: bold;
+}
