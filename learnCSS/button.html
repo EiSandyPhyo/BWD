@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Property</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        *{
+            font-family: 'Mochiy Pop P One', sans-serif;
+            font-size: 20px;
+        }
+        .btn{ 
+            color: whitesmoke;
+            padding: 10px 15px;
+            text-decoration: none;
+            margin: 20px;
+            display: inline-block;
+            transition: 0.5s;
+
+        }
+
+        .btn-primary{
+            background-color: plum;
+            border: 2px solid plum;
+        }
+
+        .btn-primary:active{
+            background-color: rosybrown;
+            border-color: rosybrown;
+            color: black;
+        }
+        .btn-secondary{
+            background-color: rgb(214, 120, 214);
+            border: 2px solid rgb(214, 120, 214);
+        }
+        .btn-secondary:active{
+            background-color: rgb(195, 99, 195);
+            border-color: rgb(195, 99, 195);
+            color: rgb(197, 197, 131);
+        }
+        .btn-outline-primary{
+            background-color: white;
+            border: 5px solid plum;
+            color: plum;
+            border-radius: 10px;
+        }
+        .btn-outline-primary:hover{
+            background-color: plum;
+            color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <button class="btn btn-primary">Click Me</button>
+    <a href="#" class="btn btn-primary">Click Me</a>
+
+    <button class="btn btn-secondary">Click Meee</button>
+
+    <button class="btn btn-outline-primary">
+        Outline Button
+    </button>
+    <button class="btn btn-primary">
+        <i class="fas fa-home"></i>
+    </button>
+</body>
+</html>
