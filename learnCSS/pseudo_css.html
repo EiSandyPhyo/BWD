@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class CSS Property</title>
+    <style>
+        p{
+            font-size: 20px;
+            letter-spacing: 5px;
+            word-spacing: 5px;
+            line-height: 25px;
+        }
+        .box{
+            width: 500px;
+            border: 2px solid black;
+            margin: 100px auto;
+            padding: 10px;
+            text-align: center;
+            background-color: gray;
+            transition: 2s;
+        }
+        .box:hover{
+            background-color: pink;
+            color: rebeccapurple;
+            font-style: italic;
+            transition: 2s;
+        }
+        .box:active{
+            background-color: saddlebrown;
+            color: cornflowerblue;
+            font-style: normal;
+            font-weight: bold;
+        }
+        textarea{
+            width: 500px;
+            margin: 100px auto;
+            background-color: cornflowerblue;
+            color: white;
+            font-size: 20px;
+        }
+        textarea:focus{
+            background-color: darkgreen;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur at iure harum, ea officiis autem quaerat dignissimos fuga repellendus cumque, molestiae asperiores possimus tempora repellat placeat blanditiis quo, dolores officia?
+        </p>
+    </div>
+    <textarea name="" id="" cols="30" rows="10">
+    </textarea>
+</body>
+</html>
