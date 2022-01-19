@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Property</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body{
+            background-color: rgb(250, 250, 250);
+        }
+        .card{
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            background-color: #fff;
+            vertical-align: top;
+            width: 300px;
+            border-radius: 10px;
+            display: inline-block;
+            margin: 20px;
+            overflow: hidden; /* when i add photo to card the border is extra corner */
+        }
+        .card-body{
+            padding: 10px 15px;
+        }
+        .card-title{
+            font-size: 25px;
+            color: black;
+        }
+        .card-paragraph{
+            font-size: 16px;
+            color: rgb(80, 78, 78);
+        }
+        .card-img{
+            width: 100%;
+            display: block; /* as not close between img n cart  */
+        }
+        .card-icon{
+            margin: 30px 0;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .text-right{
+            text-align: right;
+        }
+        .add-to-cart{
+            background-color: pink;
+            color: rgb(241, 122, 142);
+            border: none;
+            padding: 10px 8px;
+            border-radius: 50%;
+            display: block;
+            margin-left: auto;
+            margin-top: -20px;
+            position: relative;
+            margin-right: 20px;
+            
+        }
+        .see-more{
+            width: 140px;
+            background-color: pink;
+            color: rgb(241, 122, 142);
+            border: none;
+            padding: 10px 8px;
+            border-radius: 10px;
+            display: block;
+            margin: auto;
+            margin-bottom: -20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-body">
+            <p class="card-title">
+                Min Ga Lar Par
+            </p>
+            <p class="card-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit itaque quod nam modi, sint tempore alias voluptatum corrupti dolorem corporis beatae incidunt veritatis doloribus cumque voluptatem labore, tempora numquam sunt?
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body text-center">
+            <p class="card-title">
+                Min Ga Lar Par
+            </p>
+            <p class="card-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit itaque quod nam modi, sint tempore alias voluptatum corrupti dolorem corporis beatae incidunt veritatis doloribus cumque voluptatem labore, tempora numquam sunt?
+            </p>
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="card-body text-right">
+            <p class="card-title">
+                Min Ga Lar Par
+            </p>
+            <p class="card-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit itaque quod nam modi, sint tempore alias voluptatum corrupti dolorem corporis beatae incidunt veritatis doloribus cumque voluptatem labore, tempora numquam sunt?
+            </p>
+        </div>
+    </div>
+    <br>
+
+    <div class="card">
+        <img src="./img/img04.jpeg" class="card-img" alt="">
+        <div class="card-body">
+            <p class="card-title">
+                &gt;_&lt;
+            </p>
+            <p class="card-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit itaque quod nam modi, sint tempore alias voluptatum corrupti dolorem corporis beatae incidunt veritatis doloribus cumque voluptatem labore, tempora numquam sunt?
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body text-center">
+            <i class="card-icon fas fa-home fa-5x"></i>
+            <p class="card-title">
+                Min Ga Lar Par
+            </p>
+            <p class="card-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit itaque quod nam modi, sint tempore alias voluptatum corrupti dolorem corporis beatae incidunt veritatis doloribus cumque voluptatem labore, tempora numquam sunt?
+            </p>
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="card-body text-right">
+            <i class="card-icon  fas fa-snowboarding fa-5x fa-rotate-180"></i>
+            <p class="card-title">
+                Min Ga Lar Par
+            </p>
+            <p class="card-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit itaque quod nam modi, sint tempore alias voluptatum corrupti dolorem corporis beatae incidunt veritatis doloribus cumque voluptatem labore, tempora numquam sunt?
+            </p>
+        </div>
+    </div>
+    <br>
+
+    <div class="card">
+        <img src="./img/img05.jpeg" class="card-img" alt="">
+        <button class="add-to-cart">
+           &gt;_&lt;
+        </button>
+        <div class="card-body">
+            <p class="card-title">
+                My Work
+            </p>
+            <p class="card-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit itaque quod nam modi, sint tempore alias voluptatum corrupti dolorem corporis beatae incidunt veritatis doloribus cumque voluptatem labore, tempora numquam sunt?
+            </p>
+        </div>
+    </div>
+
+    <div class="card" style="overflow: visible;">
+        <div class="card-body text-center">
+            <i class="card-icon fas fa-home fa-5x"></i>
+            <p class="card-title">
+                Min Ga Lar Par
+            </p>
+            <p class="card-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit itaque quod nam modi, sint tempore alias voluptatum corrupti dolorem corporis beatae incidunt veritatis doloribus cumque voluptatem labore, tempora numquam sunt?
+            </p>
+        </div>
+        <button class="see-more">See More</button>
+    </div>
+
+</body>
+</html>
