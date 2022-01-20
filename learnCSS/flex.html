@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box CSS</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .m-3{
+            margin: 30px;
+        }
+        .p-3{
+            padding: 30px;
+        }
+        .border{
+            border: 1px solid black;
+        }
+        .w-300{
+            width: 300px;
+        }
+        .bg-one{
+            background-color: skyblue;
+        }
+        .bg-two{
+            background-color: pink;
+        }
+        .bg-three{
+            background-color: orange;
+        }
+        .bg-four{
+            background-color: cornflowerblue;
+        }
+        .bg-five{
+            background-color: darkcyan;
+        }
+        .box{
+            display: flex;
+            /*flex-direction: row;
+            flex-wrap: wrap;*/  /* =>flex-flow*/
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            height: 500px;
+            align-items: flex-start; /* vertically effect chin yin height need!! */
+            /*align-content: flex-start;*/
+        }
+        .box-one {
+            align-self: center;
+            order: 2;
+        }
+        .box-two{
+            align-self: flex-start;
+            order: 3;
+        }
+        .box-three, .box-five {
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box border m-3">
+        <div class="w-300 bg-one box-one">
+            <h4>this is One</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum possimus quis, similique est nemo sunt ut iste sint quia illum impedit porro libero qui explicabo consequatur. Nemo error facere quidem.</p>
+        </div>
+        <div class="w-300 bg-two box-two">
+            <h4>this is Two</h4>
+            <p>Provident sint error cum rerum voluptas unde molestias officiis nisi consectetur, voluptatum quis? Magnam soluta, culpa minima fugit cupiditate vitae. Fugiat voluptatibus laborum dignissimos laudantium iste nam. Aspernatur, distinctio cumque?</p>
+        </div>
+        <div class="w-300 bg-three box-three">
+            <h4>this is Three</h4>
+            <p>Ex, inventore quo. Tempore autem nostrum dolor commodi id impedit ipsa adipisci ratione veritatis aperiam atque beatae veniam repellat ullam, quisquam libero vero, at alias. Minima libero repudiandae aliquid maiores.</p>
+        </div>
+        <div class="w-300 bg-four">
+            <h4>this is Four</h4>
+            <p>Provident sint error cum rerum voluptas unde molestias officiis nisi consectetur, voluptatum quis? Magnam soluta, culpa minima fugit cupiditate vitae. Fugiat voluptatibus laborum dignissimos laudantium iste nam. Aspernatur, distinctio cumque?</p>
+        </div>
+        <div class="w-300 bg-five box-five">
+            <h4>this is Five</h4>
+            <p>Ex, inventore quo. Tempore autem nostrum dolor commodi id impedit ipsa adipisci ratione veritatis aperiam atque beatae veniam repellat ullam, quisquam libero vero, at alias. Minima libero repudiandae aliquid maiores.</p>
+        </div>
+    </div>
+</body>
+</html>
