@@ -9,7 +9,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <style>
+        .my-element {
+            display: inline-block;
+            margin: 0 0.5rem;
+
+            animation: bounce; /* referring directly to the animation's @keyframe declaration */
+            animation-duration: 2s; /* don't forget to set a duration! */
+            }
+        /* This only changes this particular animation duration */
+        .animate__animated.animate__bounce {
+        --animate-duration: 2s;
+        }
+
+        /* This changes all the animations globally */
+        :root {
+        --animate-duration: 800ms;
+        --animate-delay: 0.9s;
+        }
+
         *{
             font-family: 'Indie Flower', cursive;
             color: cornsilk;
@@ -36,6 +55,7 @@
         .login-form legend{
             font-size: 90px;
             text-align: center;
+            animate__shakeY
         }
         .form-input label{
             display: block;
@@ -78,7 +98,7 @@
     <form action="">
         <fieldset class="login-form">
             <legend class="text-light">
-                <i class="fas fa-user-circle"></i>
+                <i class="fas fa-user-circle animate__animated animate__bounce"></i>
             </legend>
             <div class="form-input">
                 <label for="text-light">
