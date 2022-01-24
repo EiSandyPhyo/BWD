@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More About Function</title>
+</head>
+<body>
+    <script>
+        //Global Scope
+        let name = "TarTar";
+
+        let a = 15;
+        console.log(a);
+
+        //function statement
+        function aa(){
+            console.log(name);
+            return "this is aa."; 
+        }
+
+        //function expression
+        let run = function() {
+            return "thi is run.";
+        };
+
+        //IIFE
+        (function(){
+            console.log("this is IIFE."); 
+        })()
+
+        //function invoke another function
+        let run2 = function() {
+            return aa()+" thi is run2.";
+        };
+        console.log(run2());
+
+        //Block Scope
+        {
+            let c = "this is c.";
+            var d = "this is d.";
+        }
+        //console.log(c); // error
+        console.log(d);
+
+        //Local Scope 
+        function cc(){
+            let e = "this is e.";
+
+            console.log(e);
+        }
+        //console.log(e);
+
+        
+
+    </script>
+</body>
+</html>
