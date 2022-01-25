@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Paratical</title>
+</head>
+<body>
+    <script>
+        //calculate Area
+        let record = []; //to store result
+        //record[0] = "1sqft";
+        //record[1] = "2sqft";
+        //record[2] = "3sqft"; 
+        let index = 0;
+
+        //function
+        function saveRecord(w,b,r){
+            record[index] = {
+                width : w,
+                breadth : b,
+                result : r
+            }
+            index++; //ထည့်တွက်လိုက်တဲ့ results တွေကို overwrite မဖြစ်သွားပဲ permanently သိမ်းထားချင်လို့
+        }
+
+        function calcArea(width,breadth){
+            let calc = width * breadth;
+            let result = calc+" sqft";
+            /*record[index] = {
+                width : w,
+                breadth : b,
+                result : r
+            }
+            index++;*/
+            saveRecord(width,breadth,result) //function ထဲမှာ function ကို ခေါ်သုံးချင်လို့
+            return result;
+        }
+
+        //calculate exchange rate //amount*usd => 100*1636
+        let rates = {
+            usd:1636,
+            eur:1933,
+            sgd:1208
+        }
+        function exchangeToMmk(amount,currency){
+            //console.log(amount*rate[currency])
+            let calc = amount * rates[currency];
+            let result = calc + " mmk";
+            return result;
+        }
+
+        function exchangeFromMmk(amount,currency){
+            let calc = amount / rates[currency];
+            let result = calc +" "+ currency;
+            return result;
+        }
+        //Calculate Fruit Buying
+        let fruit = {
+            orange : 100,
+            apple : 350,
+            mango : 120
+        }
+
+        function calcTax(amount,percentage=5){
+            return (amount*percentage)/100;
+        }
+
+        function calcFruitCost (quantity,fruitPrice){
+            let calc = quantity * fruit[fruitPrice];
+            let result = calc + " mmk";
+            return {
+                name : fruitPrice,
+                unitPrice : fruit[fruitPrice],
+                quantity,
+                cost: result,
+                tax : calcTax(calc),
+                total : calc + calcTax(calc) + " mmk"
+
+            };
+        }
+
+
+    </script>
+</body>
+</html>
