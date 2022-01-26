@@ -8,7 +8,8 @@
 </head>
 <body>
     <script>
-        
+
+    //Comparison Operator
         function run(){
             console.log("I am run1");
             console.log("I am run2");
@@ -53,7 +54,7 @@
             }else{
                 console.log("On Foot");
             }
-            console.log("Cash in hand -"+ requestMoney)
+            console.log("Cash in hand -"+ requestMoney);
 
         }else{
             console.log("Sulk");
@@ -62,11 +63,11 @@
         //YBS Number
         let busNo = 22;
         if(busNo == 65){
-            console.log(`BusNo.${busNo} arrives at the School`)
+            console.log(`BusNo.${busNo} arrives at the School`);
         }else if(busNo == 20){
-            console.log(`BusNo-${busNo} arrives at the School`)
+            console.log(`BusNo-${busNo} arrives at the School`);
         }else{
-            console.log(`BusNo-${busNo} not arrive at the School`)
+            console.log(`BusNo-${busNo} not arrive at the School`);
         }
 
         //Mark Exam
@@ -78,6 +79,44 @@
         }else{
             console.log("Fail");
         }
+
+        //Logical Operator
+        let case1 = 70;
+        let case2 = 77;
+        if(case1 >60 && case2>60){
+            console.log("Allowed to attend School");
+        }else{
+            console.log("Not allowed to attend School");
+        }
+
+        //BusNo
+        if(busNo==20 || busNo==65){
+            console.log(`BusNo.${busNo} arrives at the School`);
+        }else{
+            console.log(`BusNo-${busNo} not arrive at the School`);
+        }
+
+        //Global Announce
+        let x;
+        if(!true){
+            console.log(`I'm true`);
+            x=5; //variable assign
+        }else{
+            console.log(`I'm false`);
+            x=10;
+        }
+        console.log(x);
+
+        function checkResult(mark){
+            
+            if(mark >=80){
+                return "Pass With Degree";
+            }else if(mark >=40){
+                return "Pass";
+            }
+            return "Fail";
+            
+        }   
 
     </script>
 </body>
