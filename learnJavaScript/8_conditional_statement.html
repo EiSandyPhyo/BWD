@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statement</title>
+</head>
+<body>
+    <script>
+        
+        function run(){
+            console.log("I am run1");
+            console.log("I am run2");
+            console.log("I am run3");
+        }
+       // run() //invoke
+
+       //Testing
+        /*let condition = true; //or false;
+        if(condition){
+            console.log("I am true");
+        }else{
+            console.log("I am false");
+        }*/
+        
+        //Beat Or Not Beat
+        let wakeUpTime = 10;
+
+        if(wakeUpTime > 8){
+            console.log("Beat");
+        }else{
+            console.log("not Beat");
+        }
+
+        //Bus Or Walk
+        let money = 500;
+        if(money>=200){
+            console.log("By Bus");
+            money -=200;
+        }else{
+            console.log("On Foot");
+        }
+        console.log("Cash in hand -"+ money)
+
+        //Snack Phoe or Sulk
+        let requestMoney = 1200;
+        if(requestMoney>=1000){
+            console.log("Go To School");
+            if(requestMoney>=200){
+                console.log("By Bus");
+                requestMoney -=200;
+            }else{
+                console.log("On Foot");
+            }
+            console.log("Cash in hand -"+ requestMoney)
+
+        }else{
+            console.log("Sulk");
+        }
+
+        //YBS Number
+        let busNo = 22;
+        if(busNo == 65){
+            console.log(`BusNo.${busNo} arrives at the School`)
+        }else if(busNo == 20){
+            console.log(`BusNo-${busNo} arrives at the School`)
+        }else{
+            console.log(`BusNo-${busNo} not arrive at the School`)
+        }
+
+        //Mark Exam
+        let mark = 90;
+        if(mark >=80){
+            console.log("Pass With Degree");
+        }else if(mark >=40){
+            console.log("Pass");
+        }else{
+            console.log("Fail");
+        }
+
+    </script>
+</body>
+</html>
