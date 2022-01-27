@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+<body>
+    <script>
+        //object
+        let mySelf = {
+            //properties
+            name: "Ei Sandy Phyo",
+            age: 23,
+            skill: "Web Development",
+
+            //method
+            study(){
+                return this.name +" studied the "+ this.skill +".";
+            },
+            showBDyear(){
+                return `${this.name} was borned in ${2022-this.age}`;
+            }
+        }
+
+        
+        //Classes
+        class Myself {
+            
+            //constructor
+            constructor(x){
+                console.log("I'm constructor ---- "+x);
+            }
+
+            //properties
+            name = "Ei Sandy Phyo";
+            static age = 23;
+            skill = "Web Development";
+            static study(){
+                return "I am studying.";
+            }
+            showBDyear(){
+                return "I was born in 1994.";
+            }
+        }
+        //instantiate ( class->obj )
+        let myself = new Myself("aaa");
+        console.log(myself.name);
+
+
+
+        //Class Conclusion
+        class Student {
+            constructor(name,age,place){
+                //console.log(name);
+                this.name = name;
+                this.age = age;
+                this.place = place;
+            }
+        }
+
+        let s1 = new Student("Mg Mg", 15, "Yangon");
+        let s2 = new Student("Mya Mya", 17, "Mandalay");
+        let s3 = new Student("Hla Hla", 19, "PyinOoLwin");
+        let s4 = new Student("Kyaw Kyaw", 20, "Yangon");
+
+
+    </script>
+</body>
+</html>
