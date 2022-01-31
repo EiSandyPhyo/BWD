@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Object JavaScript</title>
+</head>
+<body>
+    <script>
+        let d = new Date();
+        console.log(d);
+        //d.setDate(9);
+        console.log(d);
+
+        //နောက်နာရီ ၃၀၀ ဆို ဘယ်နေ့၊ဘယ်ချိန် ဖြစ်မလဲ
+        //let currentHours = d.getHours();
+        //d.setHours(currentHours+300);
+        console.log(d);
+
+        //နောက်တစ်ကြိမ် သွေးလှူမဲ့ date
+        //d.setMonth(d.getMonth()+4);
+        console.log(d);
+
+        //50hr ပါဝင်တဲ့ SWD Course ကို တစ်နေ့ ၂ နာရီ လေ့လာရင် ဘယ်နေ့ပြီးမလဲ
+        let totalHours = 50;
+        let learnHours = 2;
+        let finishHours = totalHours / learnHours;
+        console.log(finishHours);
+        d.setDate(d.getDate()+finishHours);
+        console.log(d);
+
+        //examples
+        console.log("Year - "+ d.getFullYear());
+        console.log("Month(0-11) - "+ d.getMonth());
+        console.log("Date(1-31) - "+ d.getDate());
+        console.log("Hours(0-23) - "+ d.getHours());
+        console.log("Minutes(0-59) - "+ d.getMinutes());
+        console.log("Seconds(0-59) - "+ d.getSeconds());
+        console.log("MilliSeconds(0-999) - "+ d.getMilliseconds());
+        console.log("Time - "+ d.getTime());
+        console.log("Day(0-6) - "+ d.getDay());
+        //console.log("DateNow - "+ d.Date.now());
+        //get
+        console.log("get - "+d.getMinutes()+" : "+ d.getSeconds());
+        console.log(`get - ${d.getDate()} / ${d.getMonth()} / ${d.getFullYear()}`);
+
+        //to
+        console.log("to - "+d.toString());
+        console.log("to - "+d.toDateString());
+        console.log("to - "+d.toTimeString());
+
+        //tolocalString
+        console.log("tolocalString - "+d.toLocaleString());
+        console.log("tolocalString - "+d.toLocaleString("en-AU"));
+        console.log("tolocalDString - "+d.toLocaleDateString());
+        
+
+    </script>
+</body>
+</html>
