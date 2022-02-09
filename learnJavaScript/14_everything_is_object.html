@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everything is Object</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <h2>Min Ga Lar Par</h2>
+    
+    <script>
+        //String
+        let name = "ei sandy";
+        let nickname = new String("tarpo");
+        console.log(nickname.length);
+        console.log(nickname.toUpperCase());
+
+        //Number
+        let weight = new Number(123.456);
+        console.log(weight.toString());
+        console.log(weight.toFixed());
+        console.log(weight.toFixed(1));
+
+        //Array
+        let fruits = ["apple", "banana", "mango"];
+        console.log(fruits.toString());
+        console.log(fruits.join("/"));
+
+        //Object
+        let obj = {
+            name: "tarpo",
+            age: 23,
+            skill: "web development"
+        };
+
+        //Function
+        function test(x,y){
+            return typeof arguments;
+        }
+
+
+    </script>
+</body>
+</html>
