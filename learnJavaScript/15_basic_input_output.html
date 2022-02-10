@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Input and Output</title>
+</head>
+<body>
+
+    <h1 id="header">Min Ga Lar Par</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae nobis dolorem architecto ducimus consequuntur laborum corrupti voluptatem dignissimos, cupiditate temporibus earum pariatur doloremque repellendus officia explicabo quaerat, a dicta voluptate.</p>
+    <p>This is a Paragraph.</p>
+    <input type="text" id="inputTextBox">
+    <button onclick="changeHeader()">Click Me</button>
+
+    <ul>
+        <li class="list-item">Apple</li>
+        <li class="list-item">Orange</li>
+        <li class="list-item">Mango</li>
+        <li class="list-item">Banana</li>
+    </ul>
+
+    <script>
+
+        //window input text
+        //let name = window.prompt("What is your name?");
+
+        //window output text
+        //window.alert(name);
+
+        //true or false
+        //let x = window.confirm("sar pee p lar??");
+        //document.write(`<h1>${x ? "sar pee p" : "ma sar ya thay"}</h1>`);
+
+        //input from window --> output to document
+        //let inputText = window.prompt();
+        //document.getElementById("header").innerText = inputText;
+
+        //select element
+        let i = document.getElementById("inputTextBox");
+        let h = document.getElementById("header");
+
+        function changeHeader(){
+            //get text from input
+            let inputText = i.value;
+            //set text to Header
+            h.innerText = inputText;
+            //console.log(inputText);
+        }
+
+    </script>
+</body>
+</html>
