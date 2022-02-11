@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Output Paratical</title>
+    <style>
+        #result{
+            display: inline-block;
+            width: 200px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Area Calculator</h1>
+    <div class="">
+        <span>Result :</span>
+        <span id="result"></span>
+        <button onclick="addlist()">Store</button>
+        <button onclick="clearResult()">Clear</button>
+    </div>
+    <br>
+    <div class="">
+        <input type="number" id="width" placeholder="Width">
+        <input type="number" id="breath" placeholder="Breath">
+        <input type="button" value="Calculate" onclick="calcArea()">
+    </div>
+
+    <ul id="list">
+        <!-- 
+            <li>aaaaa</li>
+            <li>bbbbb</li>
+        -->
+    </ul>
+    
+    <script>
+        let width = document.getElementById("width");
+        let breath = document.getElementById("breath");
+        let result = document.getElementById("result");
+        let list = document.getElementById("list")
+
+        function calcArea(){
+            if(width.value == 0 || breath.value == 0){
+                alert("Please fill width & breath")
+            }else{
+                let calculate = width.value * breath.value;
+                result.innerHTML = `${width.value}ft x ${breath.value}ft = ${calculate} ft<sup>2<sup>`;
+                width.value = "";
+                breath.value = "";
+            }   
+        }
+        
+        
+        function addlist(){
+            if(result.innerHTML==""){
+                alert("Result is Empty!!")
+            }else{
+                list.innerHTML += `<li>${result.innerHTML}</li>`; 
+                result.innerHTML="";
+            } 
+        }
+
+        function clearResult(){
+            result.innerHTML = "";
+        }
+
+    </script>
+
+</body>
+</html>
