@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Lessons</title>
+    <style>
+        .mb-3{
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header">DOM သင်ခန်းစာ</h1>
+    
+    <p>Lorem ipsum dolor sit amet consectetur <b title="Ei Sandy Phyo" data="bb">ESDP</b> elit. Magnam, temporibus dolor enim veniam id recusandae ullam dolorum tempore quam voluptatibus nulla fugit earum itaque adipisci reiciendis magni nam, eum maxime?</p>
+    <p>Lorem ipsum dolor sit amet consectetur <b title="Ei Sandy Phyo" data="bb">ESDP</b> elit. Magnam, temporibus dolor enim veniam id recusandae ullam dolorum tempore quam voluptatibus nulla fugit earum itaque adipisci reiciendis magni nam, eum maxime?</p>
+    <p>Lorem ipsum dolor sit amet consectetur <b title="Ei Sandy Phyo" data="bb">ESDP</b> elit. Magnam, temporibus dolor enim veniam id recusandae ullam dolorum tempore quam voluptatibus nulla fugit earum itaque adipisci reiciendis magni nam, eum maxime?</p>
+    <p>Lorem ipsum dolor sit amet consectetur <b title="Ei Sandy Phyo" data="bb">ESDP</b> elit. Magnam, temporibus dolor enim veniam id recusandae ullam dolorum tempore quam voluptatibus nulla fugit earum itaque adipisci reiciendis magni nam, eum maxime?</p>
+    <p>Lorem ipsum dolor sit amet consectetur <b title="Ei Sandy Phyo" data="bb">ESDP</b> elit. Magnam, temporibus dolor enim veniam id recusandae ullam dolorum tempore quam voluptatibus nulla fugit earum itaque adipisci reiciendis magni nam, eum maxime?</p>
+    <p>Lorem ipsum dolor sit amet consectetur <b title="Ei Sandy Phyo" data="bb">ESDP</b> elit. Magnam, temporibus dolor enim veniam id recusandae ullam dolorum tempore quam voluptatibus nulla fugit earum itaque adipisci reiciendis magni nam, eum maxime?</p>
+    <p>Lorem ipsum dolor sit amet consectetur <b title="Ei Sandy Phyo" data="bb">ESDP</b> elit. Magnam, temporibus dolor enim veniam id recusandae ullam dolorum tempore quam voluptatibus nulla fugit earum itaque adipisci reiciendis magni nam, eum maxime?</p>
+    <p>Lorem ipsum dolor sit amet consectetur <b title="Ei Sandy Phyo" data="bb">ESDP</b> elit. Magnam, temporibus dolor enim veniam id recusandae ullam dolorum tempore quam voluptatibus nulla fugit earum itaque adipisci reiciendis magni nam, eum maxime?</p>
+    <p>Lorem ipsum dolor sit amet consectetur <b title="Ei Sandy Phyo" data="bb">ESDP</b> elit. Magnam, temporibus dolor enim veniam id recusandae ullam dolorum tempore quam voluptatibus nulla fugit earum itaque adipisci reiciendis magni nam, eum maxime?</p>
+    <p>Lorem ipsum dolor sit amet consectetur <b title="Ei Sandy Phyo" data="bb">ESDP</b> elit. Magnam, temporibus dolor enim veniam id recusandae ullam dolorum tempore quam voluptatibus nulla fugit earum itaque adipisci reiciendis magni nam, eum maxime?</p>
+    <p>Lorem ipsum dolor sit amet consectetur <b title="Ei Sandy Phyo" data="bb">ESDP</b> elit. Magnam, temporibus dolor enim veniam id recusandae ullam dolorum tempore quam voluptatibus nulla fugit earum itaque adipisci reiciendis magni nam, eum maxime?</p>
+    <p>Lorem ipsum dolor sit amet consectetur <b title="Ei Sandy Phyo" data="bb">ESDP</b> elit. Magnam, temporibus dolor enim veniam id recusandae ullam dolorum tempore quam voluptatibus nulla fugit earum itaque adipisci reiciendis magni nam, eum maxime?</p>
+    
+    <a href="https://google.com" target="_blink" id="testLink">Click to Google</a><br><br>
+    
+    <button id="testBtn1">Test Btn(Onclick)</button>
+    <button id="testBtn2">Test Btn(OnDBLClick)</button>
+    <button id="testBtn3">Test Btn(OnMouseOver)</button>
+    <button id="testBtn4">Test Btn(OnMouseOut)</button>
+
+    <hr>
+    <h3>Fruit Lists</h3>
+    <ul>
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Mango</li>
+        <li class="abc">Banana</li>
+    </ul>
+    <hr>
+    <h3>Student Lists</h3>
+    <ol>
+        <li>Mya Mya</li>
+        <li class="abc">Mg Mg</li>
+        <li>Hla Hla</li>
+        <li>Kyaw Kyaw</li>
+    </ol>
+    <hr>
+    <form action="" id="testform">
+        <fieldset>
+            <legend>Test Form</legend>
+            <div class="mb-3">
+                <label for="">Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="mb-3">
+                <label for="">Weight</label>
+                <input type="number" name="weight" id="weight">
+            </div>
+            <div class="mb-3">
+                <label for="">Date of Birth</label>
+                <input type="date" name="bd" id="bd">
+            </div>
+            <div class="mb-3">
+                <label for="">Donate Money</label>
+                <input type="range" name="money" id="money" min="0" max="1000">
+            </div>
+            <div class="mb-3">
+                <label for="">Photo</label>
+                <input type="file" name="photo[]" id="photo" multiple>
+            </div>
+            <div class="mb-3">
+                <label for="">Select Your Country</label>
+                <select name="country" name="country" id="country">
+                    <option value="mm">Myanmar</option>
+                    <option value="jp">Japan</option>
+                    <option value="kr">Korea</option>
+                    <option value="th">ThaiLand</option>
+                </select>
+            </div>
+            <hr>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+    <script>
+        //object
+        let myself = {
+            firstname: "eisandy",
+            lastname: "phyo",
+            age: 23,
+
+            //methods
+            fullName: function(){
+                return this.firstname + " " + this.lastname;
+            },
+
+            //es6
+            showName(){
+                return this.firstname + " " + this.lastname;
+            },
+
+            //method with parameter
+            eat(everything){
+                return ("I like "+ everything);
+            }
+        };
+
+        function run(){
+            console.log("I");
+            console.log("am");
+            console.log("run");
+        }
+        //property
+        document.querySelector("#testBtn1").onclick = function(){
+            run();
+        }
+        document.querySelector("#testBtn2").ondblclick = function(){
+            run();
+        }
+        document.querySelector("#testBtn3").onmouseover = function(){
+            run();
+        }  
+        document.querySelector("#testBtn4").onmouseout = function(){
+            run();
+        }
+
+        //method
+        document.addEventListener("keyup", function(){
+            console.log("I'm keyup");
+        })
+        document.addEventListener("keypress", function(){
+            console.log("I'm keypress");
+        })
+        document.addEventListener("keydown", function(){
+            console.log("I'm keydown");
+        })
+
+
+        //event parameter
+        document.querySelector("ul").addEventListener("click", function(e){
+            console.log(e.target.innerText); //e>target>innerText 
+        })
+        //e.preventDefault()
+        document.getElementById("testLink").addEventListener("click", function(e){
+            e.preventDefault(); //method
+            console.log(e);
+        })
+        //this keyword in event
+        document.querySelector("#testLink").addEventListener("click", function(e){
+            e.preventDefault(); //method
+            console.log(this.getAttribute("href"));
+            console.log(this.innerText);
+            console.log(e);
+        })
+        document.getElementById("name").addEventListener("keyup", function(){
+            console.log(this.value.length);
+        })
+
+        //input - focus, blur, keyup
+        document.querySelector("#name").addEventListener("focus", function(){
+            console.log("I'm focus event");
+        })
+        document.querySelector("#name").addEventListener("blur", function(){
+            console.log("I'm blur event");
+        })
+        document.querySelector("#name").addEventListener("keyup", function(){
+            console.log("I'm keyup event");
+        })
+        //select,input, file input - change
+        document.querySelector("#name").addEventListener("change", function(){
+            console.log("I'm change event");
+        })
+        document.querySelector("[type='file']").addEventListener("change", function(){
+            console.log(this.files);
+        })
+        document.querySelector("select").addEventListener("change", function(){
+            console.log(this.value);
+        })
+        //form - submit
+        document.querySelector("#testform").addEventListener("submit", function(e){
+            e.preventDefault();
+            console.log("I'm submit event");
+        })
+        //window - load, scroll
+        window.onload = function(){
+            console.log("I'm load event");
+        }
+        window.addEventListener("scroll", function(){
+            console.log(this.scrollY);
+        })
+        
+        //document
+        document.addEventListener("mousemove", function(e){
+            console.log(e.clientX, e.clientY);
+        })
+        document.onclick = function(){
+            run();
+        }
+    </script>
+
+</body>
+</html>
