@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype Method</title>
+    <style>
+        .box1{
+            margin: 20px;
+        }
+        fieldset{
+            display: inline-block;
+            border-radius: 20px;
+            line-height: 2;
+            word-spacing: 5px;
+            letter-spacing: 3px;
+        }
+        legend{
+            font-size: 30px;
+            color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <h1>Useful Prototype Methods</h1>
+    <div class="box1">
+        <fieldset>
+            <legend>String Method</legend>
+            <b>Name Length - </b><span id="namelength"></span><br>
+            <b>Substr(Start, Length) - </b><span id="substr"></span><br>
+            <b>Search() - </b><span id="search1"></span><br>
+            <b>Search() - </b><span id="search2"></span><br>
+            <b>Search() - </b><span id="search3"></span><br>
+            <b>Replace() - </b><span id="replace1"></span><br>
+            <b>Replace(//g) - </b><span id="replace2"></span><br>
+            <b>Replace(//i) - </b><span id="replace3"></span><br>
+            <b>ToUpperCase() - </b><span id="toUpperCase"></span><br>
+            <b>ToLowerCase() - </b><span id="toLowerCase"></span><br>
+            <b>Trim() - </b><span id="trim"></span><br>
+            <b>PadStart() - </b><span id="padstart"></span><br>
+            <b>PadEnd() - </b><span id="padend"></span><br>
+            <b>Split() - </b><span id="split"></span><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Number Method</legend>
+            <b>ToString() - </b><span id="tostring"></span><br>
+            <b>ToFixed() - </b><span id="tofixed"></span><br>
+            <b>ToPrecision() - </b><span id="toprecision"></span><br>
+            <b>Number() - </b><span id="number"></span><br>
+            <b>ParseFloat() - </b><span id="parsefloat"></span><br>
+            <b>ParseInt() - </b><span id="parseint"></span><br>
+            <b>Math.random() - </b><span id="math_random1"></span><br>
+            <b>Math.random() - </b><span id="math_random2"></span><br>
+            <b>Math.floor() - </b><span id="math_floor"></span><br>
+            <b>Math.ceil() - </b><span id="math_ceil"></span><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Array Method</legend>
+            <b>Length Property - </b><span id="length"></span><br>
+            <b>ToString() - </b><span id="tostring2"></span><br>
+            <b>Join - </b><span id="join"></span><br>
+            <b>Push() - </b><span id="push"></span><br>
+            <b>Pop() - </b><span id="pop"></span><br>
+            <b>Unshift() - </b><span id="unshift"></span><br>
+            <b>Shift() - </b><span id="shift"></span><br>
+            <b>Sort() - </b><span id="sort"></span><br>
+            <b>Reverse() - </b><span id="reverse"></span><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Method For Object</legend>
+            <b>Keys - </b><span id="keys"></span><br>
+            <b>Values - </b><span id="values"></span><br>
+        </fieldset>
+
+    </div>
+    
+
+    <script>
+        //String
+        let name = "Ei Sandy Phyo";
+        let nickname = "   tarpo tarpo    ";
+        let text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum eius voluptatum sed sunt cumque consectetur, non, eveniet asperiores in ab aliquam modi facilis accusamus exercitationem quis vel! Ratione, aperiam deserunt";
+        let a = "5";
+        document.getElementById("namelength").innerText = name.length;
+        document.getElementById("substr").innerText = name.substr(0,2);
+        document.getElementById("search1").innerText = name.search("Ei");
+        document.getElementById("search2").innerText = name.search("Sandy");
+        document.getElementById("search3").innerText = name.search("Phyo");
+        document.getElementById("replace1").innerText = name.replace("Sandy", "Ei");
+        document.getElementById("replace2").innerText = text.replace(/dolor/g, "abc");
+        document.getElementById("replace3").innerText = text.replace(/dolor/i, "dde");
+        document.getElementById("toUpperCase").innerText = name.toUpperCase();
+        document.getElementById("toLowerCase").innerText = name.toLowerCase();
+        document.getElementById("trim").innerText = nickname.trim();
+        document.getElementById("padstart").innerText = a.padStart("5","0");
+        document.getElementById("padend").innerText = a.padEnd("5","0");
+        document.getElementById("split").innerText = name.split(" ");
+
+        
+        //number
+        let age = 23;
+        let myBtc = 2.45694;
+        let weight = "180.46lb";
+        let money = "181$";
+        document.getElementById("tostring").innerText = age.toString();
+        document.getElementById("tofixed").innerText = myBtc.toFixed(3);
+        document.getElementById("toprecision").innerText = myBtc.toPrecision(3);
+        document.getElementById("number").innerText = Number(a);
+        document.getElementById("parsefloat").innerText = parseFloat(weight);
+        document.getElementById("parseint").innerText = parseInt(money);
+        document.getElementById("math_random1").innerText = Math.random();
+        document.getElementById("math_random2").innerText = Math.random();
+        document.getElementById("math_floor").innerText = Math.floor(myBtc);
+        document.getElementById("math_ceil").innerText = Math.ceil(myBtc);
+
+
+        //array
+        const fruits = ["Banana", "Apple", "Orange", "Mango"];
+        document.getElementById("length").innerText = fruits.length;
+        document.getElementById("tostring2").innerText = fruits.toString();
+        document.getElementById("join").innerText = fruits.join(" - ");
+        let fpush = fruits.push("Stawberry");
+        document.getElementById("push").innerText = fruits;
+        let fpop = fruits.pop();
+        document.getElementById("pop").innerText = fruits;
+        let funshift = fruits.unshift("Bluebarry");
+        document.getElementById("unshift").innerText = fruits;
+        let fshift = fruits.shift();
+        document.getElementById("shift").innerText = fruits;
+        document.getElementById("sort").innerText = fruits.sort();
+        document.getElementById("reverse").innerText = fruits.reverse();
+        
+
+        //object
+        let me = {
+            name : "Ei Sandy Phyo",
+            age : 23,
+            skill : ["html", "css", "js"],
+            haveBoyFriend : true
+        };
+        document.getElementById("keys").innerText = Object.keys(me);
+        document.getElementById("values").innerText = Object.values(me);
+
+    </script>
+
+</body>
+</html>
