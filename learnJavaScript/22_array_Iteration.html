@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Iteration</title>
+</head>
+<body>
+    <h2>Min Ga Lar Par</h2>
+    <h2>Ei Sandy Phyo</h2>
+    <h2>San kyi tar par</h2>
+    <h2>Hello</h2>
+
+    <h1>Ways 1</h1>
+    <ol></ol>
+
+    <h1>Ways 2</h1>
+
+    
+    <script>
+        //array
+        const fruits =["Banana", "Apple", "Mango", "Orange"];
+        //Ways1 
+        let ol = document.querySelector("ol");
+
+        fruits.forEach(function(i,index,arr){
+            ol.innerHTML += `<li>${i} / ${index} / ${arr}</li>`;
+            console.log(i);
+        });
+
+        let ul = document.createElement("ul");
+        
+        fruits.forEach(function(i,index,arr){
+            let li = document.createElement("li");
+            let text = document.createTextNode(i+" - "+index+" - "+arr);
+            li.append(text);
+            ul.append(li);
+            console.log(i);
+        });
+
+        document.body.append(ul);
+
+        let allH2 = document.querySelectorAll("h2");
+        let h2Arr = [];
+        allH2.forEach(function(i){
+            h2Arr.push(i.innerText);
+            console.log(i.innerText);
+        });
+        
+    </script>
+</body>
+</html>
