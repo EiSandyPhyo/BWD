@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Array Methods</title>
+</head>
+<body>
+    <!-- object array -->
+    <script src="./js/shop.js"></script>
+
+    <script>
+        //map() method
+        //string array
+        const fruits = ["Banana", "Apple", "Mango", "Orange", "Lemon", "Line", "Kiwi"];
+        
+        //number array
+        const marks = [45,55,63,35,78,94];
+
+        let newArrFruitsM = fruits.map(function(f){
+            return f +" - "+ f.length;
+        }); 
+        console.log(newArrFruitsM);
+
+        let newArrMarksM = marks.map(function(m){
+            return m >=40 ? "pass" : "fail";
+        });
+        console.log(newArrMarksM);
+
+        //object array
+        let newArrShopM = shop.map(function(s){
+            return s.title +" - "+s.price;
+        });
+        console.table(newArrShopM);
+
+        //filter() method
+        let newArrFruitsF = fruits.filter(function(f){
+            return f.length == 6;
+        });
+        console.log(newArrFruitsF);
+
+        let newArrMarksF = marks.filter(function(m){
+            return m >=75;
+        });
+        console.log(newArrMarksF);
+
+        let newArrShopF = shop.filter(function(s){
+            return s.price > 150;
+        });
+        console.table(newArrShopF);
+
+        //find() method
+        let newArrFruitsFD = fruits.find(function(f){
+            return f.length == 4;
+        });
+        console.log(newArrFruitsFD);
+
+        let newArrShopFD = shop.find(function(s){
+            return s.id == 3;
+        });
+        console.table(newArrShopFD);
+
+        //reduce(previousValue,currentValue,{initialValue}) method
+        let newArrFruitsR = fruits.reduce(function(p,c){
+            return p+c;
+        },"");
+        console.log(newArrFruitsR);
+
+        let newArrMarksR = marks.reduce(function(p,c){
+            console.log(p+" - "+c)
+            return p+c;
+        },0);
+        console.log(newArrMarksR);
+
+        let newArrShopR = shop.reduce(function(p,c){
+            return p+c.price;
+        },0);
+        console.log(newArrShopR);
+
+        //some() method
+        let newArrMarksS = marks.some(function(el){
+            console.log(el);
+            return el<40;
+        });
+        console.log(newArrMarksS);
+
+        let newArrMarksE = marks.every(function(el){
+            console.log(el);
+            return el>=40;
+        });
+        console.log(newArrMarksE);
+
+        //method + method 
+        let newArrFruitsJoin = fruits.filter(function(el){
+            return el.length > 4;
+        }).join(" - ");
+        console.log(newArrFruitsJoin);
+    </script>
+</body>
+</html>
