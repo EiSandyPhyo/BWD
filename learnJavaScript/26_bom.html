@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bowser Object Model (BOM)</title>
+    <style>
+        body{
+            height: 3000px;
+        }
+        img{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/19ecbba6-b704-4e94-b8c5-27b19c9dd0df/daj2lk9-229f72ef-2d0e-412f-8076-c1e26b76c179.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE5ZWNiYmE2LWI3MDQtNGU5NC1iOGM1LTI3YjE5YzlkZDBkZlwvZGFqMmxrOS0yMjlmNzJlZi0yZDBlLTQxMmYtODA3Ni1jMWUyNmI3NmMxNzkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.mx6dOdGiNkDNzy2aJ7D_yxTkXx6FLAtUyl6VBFSrgeI" alt="">
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/19ecbba6-b704-4e94-b8c5-27b19c9dd0df/dagg9s4-ea317a61-f061-4349-8839-23ae4462c11f.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE5ZWNiYmE2LWI3MDQtNGU5NC1iOGM1LTI3YjE5YzlkZDBkZlwvZGFnZzlzNC1lYTMxN2E2MS1mMDYxLTQzNDktODgzOS0yM2FlNDQ2MmMxMWYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.muwJnJAYq1Ak2dBas0cAZhjJrpa4Vu-_MEf_4oH4BaU" alt="">
+    <br>
+    <br>
+    <button onclick="alert('hello')">Alert</button>
+    <button onclick="prompt('hello say something')">Prompt</button>
+    <button onclick="confirm('Are u sure?')">Confirm</button>
+    <button onclick="open()">Open</button>
+    <button onclick="close()">Close</button>
+    <button onclick="setTimeout(run, 3000)">TimeOut</button>
+    <button onclick="setInterval(run, 1000)">Interval</button>
+    <button onclick="clearInterval(myControl)">Stop</button>
+    <button id="screen">Screen</button>
+    <button id="location">Location</button>
+    <button id="history">History</button>
+    <button onclick="history.forward()">Forward</button>
+    <button onclick="history.back()">Back</button>
+
+
+    <script>
+        //scroll
+        window.addEventListener("scroll", _=>console.log(pageYOffset));
+
+        //resize 
+        window.addEventListener("resize", _=>console.log(innerWidth, innerHeight));
+
+        //load
+        console.log('a');
+        console.log('b');
+        console.log('c');
+        window.addEventListener("load", _=>console.log("Loading Finish"));
+
+       
+        //alert
+        
+        //prompt
+
+        //confirm
+
+        //open
+
+        //close
+
+        //timing //timeOut
+        let a = 1;
+        function run(){
+            console.log("this is run" + a++);
+        }
+        //setTimeout(run, 1000);
+        //clearTimeout(run, 1000); //run tr ko terminate tr
+
+       // let myControl = setInterval(run, 1000);
+
+
+        //screen
+        document.querySelector("#screen").addEventListener("click", function(){
+            console.log(window.screen);
+        })
+
+        //location
+        document.querySelector("#location").addEventListener("click", function(){
+            console.log(window.location);
+        })
+
+        document.querySelector("#history").addEventListener("click", function(){
+            console.log(window.history);
+        })
+        
+
+
+
+        
+    </script>
+</body>
+</html>
