@@ -5,8 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Test for Calculator</title>
+    <style>
+        .display-box{
+            margin-bottom: 10px;
+            font-size: 50px;
+        }
+        .key{
+            padding: 20px;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
+    <div class="calc">
+        <h1 class="display-box" aria-placeholder="0"></h1>
+        <div class="keypad"></div>
+    </div>
     
+    <script>
+        let keyPad = document.querySelector(".keypad");
+        let displayBox = document.querySelector(".display-box");
+        let operators = ["+","-","*","/","="]
+
+
+        for(i=0; i<10; i++){
+            keyPad.innerHTML += `<button onclick="showInDisplay(${i})" class="key">${i}</button>`;
+        }
+
+        operators.forEach(function(o){
+            if(o === "="){
+                keyPad.innerHTML += `<button onclick='calc()' class="key">${o}</button>`
+
+            }else{
+                //console.log(o);
+                keyPad.innerHTML += `<button onclick='showInDisplay("${o}")' class="key">${o}</button>`
+            }
+            
+
+        })
+        
+        let showInDisplay = function (x) {
+            displayBox.innerText += x;
+        } 
+
+        function calc(){
+            let result = eval(displayBox.innerText);
+            displayBox.innerText = result;
+        }
+        
+
+
+    </script>
 </body>
 </html>
