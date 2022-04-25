@@ -19,13 +19,16 @@
 <body>
     <div class="calc">
         <h1 class="display-box" aria-placeholder="0"></h1>
-        <div class="keypad"></div>
+        <div class="keypad">
+            <!-- <button class="key">0</button>
+            <button class="key">9</button> -->
+        </div>
     </div>
     
     <script>
         let keyPad = document.querySelector(".keypad");
         let displayBox = document.querySelector(".display-box");
-        let operators = ["+","-","*","/","="]
+        let operators = ["+","-","*","/","%","="] // array.forEach(function(a) parameter) <-need fun parameter
 
 
         for(i=0; i<10; i++){
