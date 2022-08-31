@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display FlexBox</title>
+    <style>
+        .container{
+            display: flex;
+            height: 90vh;
+            flex-flow: row wrap; /* row or column */
+            justify-content: space-evenly;
+            /* align-items: center; */
+            align-content: center;
+
+        }
+        .col{
+            background-color: #808080;
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col">
+            <h1>This is One</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam beatae voluptatibus aliquid nulla adipisci sint eius officiis facere, dolore aperiam perferendis blanditiis provident, fugiat eos ipsum mollitia assumenda in pariatur.</p>
+        </div>
+        <div class="col">
+            <h1>This is Two</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam beatae voluptatibus aliquid nulla adipisci sint eius officiis facere, dolore aperiam perferendis blanditiis provident, fugiat eos ipsum mollitia assumenda in pariatur.</p>
+        </div>
+        <div class="col">
+            <h1>This is Three</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam beatae voluptatibus aliquid nulla adipisci sint eius officiis facere, dolore aperiam perferendis blanditiis provident, fugiat eos ipsum mollitia assumenda in pariatur.</p>
+        </div>
+    </div>
+</body>
+</html>
