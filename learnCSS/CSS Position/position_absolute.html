@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Absolute</title>
+    <style>
+        .one{
+            width: 250px;
+            height: 250px;
+            background-color: brown;
+            position: absolute; /* Document မှာကပ် ၊ scroll ဆွဲရင်ပါတယ် */
+            z-index: 2; /* အကုန်လုံးမှာ position:absolute; သုံးလိုက်ရင်
+                            layer တွေ အုပ်”သွားမယ် နောက်ဆုံးသုံးလိုက်တာက အပေါ်ဆုံးကနေ အုပ်နေမယ်
+                            ဒါဆို layers တွေ ခွဲဖို့ z-index သုံးရမယ်
+                            (z-index များလေ အပေါ်ရောက်လေပါ) */
+        }
+        .two{
+            width: 300px;
+            height: 300px;
+            background-color: palevioletred;
+            position: absolute;
+            z-index: 1;
+        }
+        .three{
+            width: 350px;
+            height: 350px;
+            background-color: peru;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">One</div>
+    <div class="two">Two</div>
+    <div class="three">Three</div>
+</body>
+</html>

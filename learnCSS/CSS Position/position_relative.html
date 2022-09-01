@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Relative</title>
+    <style>
+        .one{
+            width: 250px;
+            height: 250px;
+            background-color: brown;
+            position: relative; /* သူ့ရဲ့ပိုင်နက်ကနေပဲ အလုပ်လုပ်သွားတယ် R,R,B,L အလုပ်”တယ် */
+            bottom: 50px;
+            left: 50px;
+        }
+        .two{
+            width: 300px;
+            height: 300px;
+            background-color: palevioletred;
+        }
+        .three{
+            width: 350px;
+            height: 350px;
+            background-color: peru;
+        }
+
+        .box{
+            width: 900px;
+            height: 400px;
+            border: 5px solid slateblue;
+            position: relative; /* ခြံခတ်တဲ့အပိုင်း */
+        }
+        .item{
+            width: 50px;
+            height: 50px;
+            background-color: aqua;
+            position: absolute;
+            top: 200px;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+
+    <!-- ခြံခတ်တဲ့အပိုင်း -->
+    <div class="box">
+        <div class="item"></div> 
+    </div>
+</body>
+</html>
