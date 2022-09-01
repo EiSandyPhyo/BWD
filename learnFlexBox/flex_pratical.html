@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Paratical 1</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .bg-gray{
+            background-color: gray;
+        }
+        .bg-skyblue{
+            background-color: skyblue;
+        }
+        .bg-orange{
+            background-color: orangered;
+        }
+        /* section one */
+        .one{
+            height: 50vh;
+            background-color: #f5f5f5;
+            display: flex;
+        }
+        .part{
+            flex-grow: 1; /* (Part) သူတို့ရဲ့ width ကို ပေးလိုက်တာနဲ့ တူတယ် */
+        }
+        .right-inner{
+            width: 300px;
+            
+        }
+        .part.right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* section two */
+        .two{
+            display: flex;
+            width: 990px;
+            margin: auto; /* သူ့ကိုယ်သူ အလယ်ရောက်သွားချင်တာ */
+            justify-content: space-between;
+            margin-top: -95px;
+
+        }
+        .two-part{
+            text-align: center;
+            width: 300px;
+            padding: 30px 15px;
+            background-color: #fff;
+            box-shadow: 0 0 30px #00000020; 
+        }
+
+        /* section three */
+        .third{
+            width: 990px;
+            margin: 100px auto;
+            display: flex;
+            justify-content: center;
+        }
+        .third-part{
+            width: 500px;
+            text-align: center;
+        }
+
+        /* section four */
+        .four{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f5f5;
+        }
+        .four-img{
+            width: 450px;
+            padding: 0 20px;
+        }
+        .four-part{
+            width: 450px;
+            padding: 0 50px;
+        }
+
+        /* section five */
+        .five{
+            background-color: #fff;
+            flex-direction: row-reverse;
+        }
+        .five-part{
+            text-align: right;
+        }
+        @media screen and (max-width:480px) {
+            .one, .two, .third, .four, .five{
+                flex-direction: column; /* laptop မှာဆို flex-direction: row; သုံးတယ် */
+                                        /* phone မှာဆို flex-direction: column; သုံးတယ် */
+                align-items: center;
+            }
+            section, div{
+                max-width: 100% !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="one">
+        <div class="part left bg-gray"></div>
+        <div class="part right bg-skyblue">
+            <div class="right-inner">
+                <h1>This is One</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam mollitia quisquam voluptas esse aspernatur magnam eos neque ducimus aliquam fugiat iusto accusamus, libero corrupti, eligendi, tempora nam possimus saepe ad!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="two">
+        <div class="two-part">
+            <h1>This is One</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vero, nemo autem blanditiis placeat dolorum quos, laborum expedita, est optio atque fugiat ex nam temporibus quisquam quasi vel nobis dolor?</p>
+        </div>
+        <div class="two-part">
+            <h1>This is Two</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vero, nemo autem blanditiis placeat dolorum quos, laborum expedita, est optio atque fugiat ex nam temporibus quisquam quasi vel nobis dolor?</p>
+        </div>
+        <div class="two-part">
+            <h1>This is Three</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vero, nemo autem blanditiis placeat dolorum quos, laborum expedita, est optio atque fugiat ex nam temporibus quisquam quasi vel nobis dolor?</p>
+        </div>
+    </section>
+
+    <section class="third">
+        <div class="third-part">
+            <h1>This is Third</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit debitis perferendis laudantium veritatis recusandae consequatur dolore in corporis. Quae ea dolor excepturi fuga! Reiciendis, soluta quidem. Possimus culpa ipsum reprehenderit.</p>
+        </div>
+    </section>
+
+    <section class="four">
+        <img src="https://cdn130.picsart.com/288152949057211.png" class="four-img" alt="">
+        <div class="four-part">
+            <h1>This is Four</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam perspiciatis officia vero obcaecati soluta quam odio voluptate ullam perferendis quis? Cum laboriosam voluptas ducimus aspernatur quae pariatur esse dolorem? Labore!</p>
+        </div>
+    </section>
+
+    <section class="four five">
+        <img src="https://cdn130.picsart.com/287131023011211.png" class="four-img" alt="">
+        <div class="four-part five-part">
+            <h1>This is Five</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam perspiciatis officia vero obcaecati soluta quam odio voluptate ullam perferendis quis? Cum laboriosam voluptas ducimus aspernatur quae pariatur esse dolorem? Labore!</p>
+        </div>
+    </section>
+</body>
+</html>
