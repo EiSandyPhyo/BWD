@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector n Position Design DialogBox</title>
+    <style>
+        .box1{
+            width: 300px;
+            height: 100px;
+            background-color: palevioletred;
+            border-radius: 15px;
+        }
+        .box-tail{
+            /* width: 50px;
+            height: 50px; */
+            background-color: palevioletred;
+            border: 20px solid white;
+            border-top-color: palevioletred;
+            display: inline-block;
+            margin-left: 150px;
+        }
+        .box2{
+            width: 300px;
+            height: 100px;
+            background-color: palevioletred;
+            border-radius: 15px;
+            position: relative;
+        }
+        .box2::after{
+            content: "";
+            /* width: 50px;
+            height: 50px; */
+            background-color: black;
+            position: absolute;  /* position:absolute; ထည့်မှ သူ့အပိုင်းလေးကို မြင်ရမယ် မဟုတ်ရင် မမြင်ရဘူး */
+            /* bottom: 0; */  /* ခြံမရှိရင် အပြင်ထွက်နေမှာမို့ သူ့ box မှာ ခြံသွားခတ်ဖို့လုပ် */
+            bottom: -40px;
+            left: 150px;
+            border: 20px solid white; 
+            border-top-color: palevioletred;
+            display: inline-block;
+
+        }
+    </style>
+</head>
+<body>
+    <!----- Way 1 ----->
+    <h1>Way1</h1>
+    <div class="box1"></div>
+    <div class="box-tail"></div>
+
+    <!----- Way 2 ----->
+    <h1>Way2</h1>
+    <div class="box2"></div>
+</body>
+</html>
