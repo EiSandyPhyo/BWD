@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector n Position Background Image Blur</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto Mono', monospace;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        .home{
+            background-image: url(../img/kawaii_aesthetic_3.jpeg);
+            height: 100vh;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: -2;  /* ပီးမှ -2 လုပ်တာ */
+        }
+        .home-content{
+            width: 500px;
+        }
+        .home-content-title, .home-content-p{
+            text-align: center;
+            color: #170000;
+            line-height: 2;
+            word-spacing: 3px;
+            letter-spacing: 2px;
+        }
+        .home::before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: #B993D6;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            top: 0;
+            left: 0;
+            opacity: 0.7;
+            z-index: -1;  /* ကြီးလေ အပေါ်ရောက်လေ  -1က အရင်အလုပ်”တယ် */
+        }
+        .sec-1, .sec-2{
+            height: 100vh;
+        }
+        .up{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #CBCCFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+        }
+        .up-icon{
+            width: 20px;
+            color: #170000;
+        }
+        .sec-1{
+            text-align: center;
+            background-image: url(../img/kawaii_aesthetic_9.jpeg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center; 
+        }
+        .sec-2{
+            display: flex;
+            margin-left: 400px;
+            align-items: center;
+        }
+        .sec-2-content{
+            background-image: url(../img/kawaii_aesthetic_7.jpeg);
+            width: 100%;
+            height: 50vh;
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1 class="home-content-title">Hello Testing</h1>
+            <p class="home-content-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nulla omnis nam. Id, sunt asperiores velit impedit quo error, omnis dolore soluta esse laudantium necessitatibus in doloribus fugit neque mollitia.</p>
+        </div>
+    </section>
+
+    <section class="sec-1">
+        <div class="sec-1-content">
+            <h1>Section 1</h1>
+        </div>
+    </section>
+    <section class="sec-2">
+        <div class="sec-2-content">
+            <div class="sec-2-content-item">
+                <h1>Section 2</h1>
+                <p style="width: 300px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, incidunt vitae temporibus sunt consequuntur!</p>
+            </div>
+        </div>
+    </section>
+    <div class="up">
+        <a href="#home">
+            <svg class="up-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>        
+        </a>
+    </div>
+</body>
+</html>
