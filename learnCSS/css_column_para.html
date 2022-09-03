@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Column Paragraph</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Inconsolata', monospace;
+        }
+        body{
+            padding: 30px ;
+        }
+        .heading{
+            color: #FF8066;
+            /* margin-bottom: 30px; */
+        }
+        .paragraph{
+            color: #4B4453;
+            column-count: 3;
+            column-width: 300px; /* device responsive case !important*/ /* nowidth columns are 3parts */
+            column-rule: 1px solid #FF8066;
+            column-gap: 50px;
+        }
+        .paragraph p{
+            margin-bottom: 30px;
+            line-height: 2;
+            word-spacing: 10px;
+        }  
+        .full{
+            column-span: all;
+            margin-top: 30px;
+        } 
+        @media screen and (max-width: 480px) {
+            .heading{
+            margin-bottom: 30px;
+            }
+            .full{
+                margin-top: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">CSS Column Property</h1>
+    <div class="paragraph">
+        <p class="full">Lorem ipsum<mark>1</mark>, dolor sit amet consectetur adipisicing elit. Modi id quis voluptatem eligendi laborum recusandae debitis error est iste. Iste nisi ipsa error explicabo nostrum libero sint a ab nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi magni deleniti cupiditate consectetur eaque itaque aliquid aspernatur. Id, aut possimus placeat, consectetur ex sed, eaque delectus sunt deleniti totam voluptas? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos non, nam possimus, illo provident quia vitae id, porro distinctio officiis incidunt? Debitis reiciendis minima iure quibusdam repudiandae ad, cupiditate eum!</p>
+
+        <p>Lorem ipsum<mark>2</mark>, dolor sit amet consectetur adipisicing elit. Modi id quis voluptatem eligendi laborum recusandae debitis error est iste. Iste nisi ipsa error explicabo nostrum libero sint a ab nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni, nostrum aperiam atque cupiditate quod veritatis fuga voluptatem voluptatibus repellat itaque labore ut odio. Beatae perferendis deleniti consequuntur soluta tempora? </p>
+
+        <p>Lorem ipsum<mark>3</mark>, dolor sit amet consectetur adipisicing elit. Modi id quis voluptatem eligendi laborum recusandae debitis error est iste. Iste nisi ipsa error explicabo nostrum libero sint a ab nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi exercitationem delectus, sit fuga sint voluptatum vel. Architecto quia, cumque at aliquam voluptas quidem quae nam voluptatem doloremque quam eos reprehenderit! </p>
+
+        <p>Lorem ipsum<mark>4</mark>, dolor sit amet consectetur adipisicing elit. Modi id quis voluptatem eligendi laborum recusandae debitis error est iste. Iste nisi ipsa error explicabo nostrum libero sint a ab nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid velit, optio est laborum sint minima nisi ducimus nostrum ea officiis iste impedit hic sunt iure deserunt consectetur facilis sit reiciendis! </p>
+
+        <p class="full">Lorem ipsum<mark>5</mark>, dolor sit amet consectetur adipisicing elit. Modi id quis voluptatem eligendi laborum recusandae debitis error est iste. Iste nisi ipsa error explicabo nostrum libero sint a ab nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae fugiat, debitis perspiciatis earum explicabo nobis animi fuga iusto eligendi. Doloremque ipsum earum voluptatum laborum, possimus voluptatibus labore quasi sint laboriosam? </p>
+
+        <p>Lorem ipsum<mark>6</mark>, dolor sit amet consectetur adipisicing elit. Modi id quis voluptatem eligendi laborum recusandae debitis error est iste. Iste nisi ipsa error explicabo nostrum libero sint a ab nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi veritatis voluptatum consequuntur aspernatur deleniti voluptatibus, sit ab adipisci, distinctio consequatur dolorem, vel molestias officia quidem atque cum aliquid quos commodi?</p>
+
+        <p>Lorem ipsum<mark>7</mark>, dolor sit amet consectetur adipisicing elit. Modi id quis voluptatem eligendi laborum recusandae debitis error est iste. Iste nisi ipsa error explicabo nostrum libero sint a ab nihil. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint adipisci, mollitia quam, voluptates sed, delectus iste dignissimos rerum dolorum soluta ducimus quod ex expedita a corporis? Distinctio ratione non placeat. </p>
+
+        <p>Lorem ipsum <mark>8</mark>, dolor sit amet consectetur adipisicing elit. Modi id quis voluptatem eligendi laborum recusandae debitis error est iste. Iste nisi ipsa error explicabo nostrum libero sint a ab nihil. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint adipisci, mollitia quam, voluptates sed, delectus iste dignissimos rerum dolorum soluta ducimus quod ex expedita a corporis? Distinctio ratione non placeat. </p>
+
+    </div>
+
+</body>
+</html>
