@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Column Images</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Inconsolata', monospace;
+        }
+        body{
+            padding: 30px;
+        }
+        .title{
+            color: #9CD5EA;
+            margin: 30px auto;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 4em;
+        }
+        .gallery{
+            columns: 3 300px;
+            column-gap: 30px;
+            width: 1000px;
+            margin: auto; /* to center */
+        }
+        .img-gallery{
+            width: 100%;
+            background-color: #F6F6F6;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            transition: 0.5s;
+        }
+        .img-gallery:hover{
+            filter: contrast(150%);
+        }
+        @media screen and (max-width: 1024px) {
+            .gallery{
+                width: 100%;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .gallery{
+                columns: 2 150px;
+                column-gap: 15px;
+            }
+            .img-gallery{
+                margin-bottom: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="title">Gallery</div>
+    <div class="gallery">
+        <img class="img-gallery" src="./img/cinnamoroll_1.png" alt="">
+        <img class="img-gallery" src="./img/cinnamoroll_2.png" alt="">
+        <img class="img-gallery" src="./img/cinnamoroll_4.png" alt="">
+        <img class="img-gallery" src="./img/cinnamoroll_5.png" alt="">
+        <img class="img-gallery" src="./img/cinnamoroll_6.png" alt="">
+        <img class="img-gallery" src="./img/cinnamoroll_7.png" alt="">
+        <img class="img-gallery" src="./img/cinnamoroll_8.png" alt="">
+        <img class="img-gallery" src="./img/cinnamoroll_13.png" alt="">
+        <img class="img-gallery" src="./img/cinnamoroll_3.png" alt="">
+        <img class="img-gallery" src="./img/cinnamoroll_9.png" alt="">
+        <img class="img-gallery" src="./img/cinnamoroll_10.png" alt="">
+        <img class="img-gallery" src="./img/cinnamoroll_11.png" alt="">
+        <img class="img-gallery" src="./img/cinnamoroll_12.png" alt="">
+        <img class="img-gallery" src="./img/cinnamoroll_14.png" alt="">
+        <img class="img-gallery" src="./img/cinnamoroll_15.png" alt="">
+    </div>
+</body>
+</html>
