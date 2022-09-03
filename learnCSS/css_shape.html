@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shape</title>
+    <style>
+        div{
+            display: inline-block;
+        }
+        .square{
+            width: 50px;
+            height: 50px;
+            border: 2px solid #FF6F91;
+        }
+        .square-rounded{
+            border-radius: 5px;
+        }
+        .rectangle{
+            width: 150px;
+            height: 50px;
+            border: 2px solid #FF6F91;
+        }
+        .circle{
+            width: 50px;
+            height: 50px;
+            border: 2px solid #FF6F91;
+            border-radius: 50%;
+            background: #F3C5FF;
+        }
+        .circle-img{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
+        .bg-img{
+            background: url(./img/img05.jpeg);
+            background-size: 70px;
+        }
+        .triangle{
+            border: 50px solid white;
+            border-bottom-color: #FF6F91;
+            border-top-width: 0px;
+        }
+        .right-triangle{
+            border: 50px solid white;
+            border-bottom-color: #FF6F91;
+            border-right-color: #FF6F91;
+        }
+        .right-triangle-2{
+            border: 50px solid white;
+            border-bottom-color: #FF6F91;
+            border-left-color: #FF6F91;
+        }
+        .envelope{
+            border: 50px solid #F3C5FF;
+            border-top-color: #FF6F91;
+            border-bottom-width: 25px;
+            border-radius: 4px;
+        }
+        .hw-shape{
+            width: 70px;
+            height: 50px;
+            background: #FF6F91;
+            position: relative;
+            left: 80px;
+        }
+        .hw-shape::before{
+            content: "";
+            border: 25px solid #FF6F91;
+            position: absolute;
+            border-bottom-color: white;
+            left: -49px;
+            transform: rotate(90deg);
+        }
+        .hw-shape::after{
+            content: "";
+            border: 25px solid white;
+            position: absolute;
+            right: -50px;
+            border-left-color: #FF6F91;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML, CSS Shape</h1>
+
+    <div class="square"></div>
+    <div class="square square-rounded"></div>
+    <div class="rectangle"></div>
+    <hr>
+
+    <div class="circle"></div>
+    <img class="circle-img" src="./img/img05.jpeg" alt="">
+    <div class="circle bg-img"></div>
+    <hr>
+
+    <div class="triangle"></div>
+    <div class="right-triangle"></div>
+    <div class="right-triangle-2"></div>
+    <div class="envelope"></div>
+    <hr>
+
+    <div class="hw-shape"></div>
+
+</body>
+</html>
