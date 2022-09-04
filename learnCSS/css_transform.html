@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 2D TransForms Methods</title>
+    <style>
+        img{
+            width: 500px;
+            margin: 50px;
+            transition: 1s;
+        }
+        .img-2D:hover{
+            transform: translate(100px, 100px); /* moves an element from its current position (x,y) */
+            transform: rotate(20deg);  /* rotates an element clockwise */
+            transform: rotate(-20deg);  /* rotates an element counter-clockwise */
+            transform: scale(2,2);   /* increases(over1) or decreases(lower1) the size of an element (w,h) | (1)is Default */ 
+            transform: scaleX(2);   /* increases(over1) or decreases(lower1) the width of an element (w) | (1)is Default */ 
+            transform: scaleY(0.5);   /* increases(over1) or decreases(lower1) the height of an element (h) | (1)is Default */ 
+            transform: skew(20deg, 10deg); /* skews an element along the X and Y-axis */
+            transform: skewX(20deg); /* skews an element along the X-axis */
+            transform: skewY(10deg); /* skews an element along the Y-axis */
+            transform: matrix(2,10deg, 10deg, 1, 150, 0 ); /* matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+        }
+        .img-3D:hover{
+            transform: rotateX(150deg);  /* rotates an element around its X-axis */
+            transform: rotateY(150deg);  /* rotates an element around its Y-axis */
+            transform: rotateZ(90deg);  /* rotates an element around its Z-axis */
+        }
+    </style>
+</head>
+<body>
+    <h1>2D TransForms Methods</h1>
+    <img class="img-2D" src="./img/cinnamoroll_5.png" alt="">
+
+    <h1>3D TransForms Methods</h1>
+    <img class="img-3D" src="./img/cinnamoroll_7.png" alt="">
+</body>
+</html>
