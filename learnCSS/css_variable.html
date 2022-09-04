@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable</title>
+    <style>
+        :root{
+            --text-purple: #7A5EC2;
+            --bg: #EBC7FF;
+
+        }
+        h1{
+            color: var(--text-purple);  /* var(--name, value) */
+            text-align: center;
+        }
+        .one{
+            width: 300px;
+            min-height: 100px;
+            background: var(--bg);
+            padding: 10px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Variable</h1>
+    <div class="one">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor aspernatur consequatur ipsum blanditiis consequatur ipsum blanditiis Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos dolorum maiores aspernatur cum, adipisci blanditiis labore, est similique impedit laborum saepe! Consectetur laborum fugiat, vitae officia provident placeat obcaecati?</div>
+</body>
+</html>

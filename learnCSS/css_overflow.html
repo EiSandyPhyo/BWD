@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow</title>
+    <style>
+        div{
+            display: inline-block;
+            margin: 30px;
+        }
+        .one{
+            width: 300px;
+            height: 200px;
+            border: 5px solid #339095;
+            padding: 10px;
+            /* overflow: hidden; */  /* သတ်မှတ်ထားတဲ့ border height ထက် စာတွေက ကျော်သွားရင် ဖျောက်တာ */
+            /* overflow: scroll; */  /* default h ရော v ရော ပါချင်သုံး */
+            /* overflow-x: scroll; */  /* horizontal သုံးတာ */
+            overflow-y: scroll; /* vertical သုံးတာ */
+
+        }
+        .two{
+            width: 300px;
+            min-height: 100px;
+            border: 5px solid #339095;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <h1>With Overflow</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis at repellendus nulla voluptas maiores, cumque delectus consequuntur temporibus quis doloribus unde, possimus voluptatibus sit numquam veritatis pariatur officiis perspiciatis sed itaque velit doloremque adipisci? Consequatur non cumque doloremque qui dolores fuga id repellendus, modi nesciunt necessitatibus ab voluptatum placeat quam! Totam ad ea laudantium possimus vero eum deleniti, iste odit animi veritatis voluptates sequi adipisci tempora quis inventore earum repudiandae commodi corporis, mollitia deserunt voluptatibus quas atque reprehenderit! Repellendus ea placeat accusamus quaerat deserunt ullam at quae odit consequuntur aliquam cumque dolore rerum labore earum hic et, similique ipsa quam perspiciatis.
+    </div>
+    <div class="two">
+        <h1>With Min-Height</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis at repellendus nulla voluptas maiores, cumque delectus consequuntur temporibus quis doloribus unde, possimus voluptatibus sit numquam veritatis pariatur officiis perspiciatis sed itaque velit doloremque adipisci? Consequatur non cumque doloremque qui dolores fuga id repellendus, modi nesciunt necessitatibus ab voluptatum placeat quam! Totam ad ea laudantium possimus vero eum deleniti, iste odit animi veritatis voluptates sequi adipisci tempora quis inventore earum repudiandae commodi corporis, mollitia deserunt voluptatibus quas atque reprehenderit! Repellendus ea placeat accusamus quaerat deserunt ullam at quae odit consequuntur aliquam cumque dolore rerum labore earum hic et, similique ipsa quam perspiciatis.
+    </div>
+</body>
+
+</html>

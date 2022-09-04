@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text Effects</title>
+    <style>
+        div{
+            display: inline-block;
+            margin: 0 30px;
+        }
+        .text1{
+            writing-mode: horizontal-tb;
+        }
+        .text2{
+            writing-mode: vertical-rl;
+        }
+        .text3{
+            writing-mode: vertical-lr;
+        }
+        .one{
+            width: 140px;
+            min-height: 100px;
+            border: 5px solid #339095; 
+            /* word-break: break-all; */  /* character နေရာကနေ ဖျက်ဆင်းတာ */
+            word-break: keep-all;  /* word ၁ ခုလုံးပီးမှ ဆင်းတာ space ကနေ */
+        }
+        .two{
+            width: 140px;
+            min-height: 100px;
+            border: 5px solid #339095; 
+            word-wrap: break-word;
+        }
+        .three{
+            width: 140px;
+            height: 50px;
+            border: 5px solid #339095; 
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>Writing Mode Property</h1>
+    <p class="text1">Text with default writing mode.</p>
+    <p class="">Text with a span element with a <span class="text2">vertical-right_to_left(rl)</span>writing mode.</p>
+    <p class="">Text with a span element with a <span class="text3">vertical-left_to_right(lr)</span>writing mode.</p>
+    <div class="one"> <mark><b>word-break</b></mark> <br> Lorem ipsum, dolor sit amet consecteturadipisicing elit. Doloremque inventoreremexplicaboa aperiam suscipit, </div>
+    <div class="two"> <mark><b>word-wrap</b></mark> <br>Lorem ipsum, dolor sit amet consecteturadipisicing elit. Doloremque inventoreremexplicaboabbbbbbbbbbbbbbbbbbbbbb aperiam suscipit, </div>
+    <div class="three"><mark><b>text-overflow</b></mark> <br> Lorem ipsum, dolor sit amet consectetur adipisicing </div>
+</body>
+</html>
