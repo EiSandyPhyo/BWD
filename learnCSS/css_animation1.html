@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation 1</title>
+    <style>
+        /* initial state */
+        .obj{
+            width: 100px;
+            height: 100px;
+            background: #C493FF;
+            transition: 0.5s;
+            animation-name: first;
+            /* transform: translateX(150px); */ /* initial state (ဘာမှမလုပ်ခင်နဲ့) to state (နောက်ဆုံးအဆင့်) တူသင့်တယ် ဒါမှ ရွေ့သွားတယ် ဆိုတာ သိနိုင်မယ် */
+            /* animation-duration: 2s; */  /* (translateX) ရွေ့သွားနေတဲ့ ကြာချိန် */
+            /* animation-delay: 5s; */  /* animation လေးအလုပ်”ဖို့ ကြားထဲ 5s ကြာတဲ့အချိန်ပဲ delay က */
+            /* animation-iteration-count: 3; */  /* animation ကို ဘယ်နှစ်ကြိမ် run စေချင်(3) */
+            /* animation-iteration-count: infinite; */  /* မပီးစေချင်ဘူး အမြဲ run စေချင် */
+            /* animation-direction: alternate; */  /* အသွားအပြန် (forwards to backwards) */
+            /* animation-timing-function: linear; */  /* (animation speed) အသေသွားနေတာ စထွက်လည်းမမြန်ပဲ ရွေ့နေပီး အဆုံးကျ မနှေးပဲ တသတ်မတ်ထဲသွားနေတာ */
+            /* (name duration timing delay iterationCount direction) */
+            animation: first 2s linear 1s infinite alternate;  
+        }
+        /* /initial state */
+
+        
+        /* to state */
+        @keyframes first {
+            from{
+                transform: translateX(0px);
+            }
+            to{
+                transform: translateX(150px);
+            }
+        }
+        /* /to state */
+
+    </style>
+</head>
+<body>
+    <div class="obj"></div>
+</body>
+</html>
