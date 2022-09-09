@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratical Fa</title>
+    <style>
+        .room{
+            width: 600px;
+            height: 500px;
+            background-image: url(./img/Capture.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
+            margin: 150px auto;
+            transition: 0.5s;
+            position: relative;
+            overflow: hidden;
+        }
+        .fa, .knife,.ppl{
+            width: 100px;
+        }
+        .ppl-boy{
+            transform: translate(183px, 290px);
+            animation: boy 3s linear;
+            position: absolute;
+
+        }
+        .ppl-girl{
+            /* transform: translate(275px, 182px); */
+            transform: translate(275px, 286px);
+            animation: girl 3s linear;
+            position: absolute;
+
+        }
+        
+        .knife{
+            transform: translate(208px, 292px);
+            animation: slice 8s linear;
+            position: absolute;
+
+        }
+        .boy{
+            transform: translateX(-100px);
+            animation: toLeft 10s linear;
+        }
+        .girl{
+            transform: translateX(100px);
+            animation: toRight 10s linear;
+        }
+        .fa-ppl{
+            width: 100%;
+            height: 100%;
+            background-color: #FCFCFC;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            transform: translateY(0px);
+            animation: ffa 12.5s linear;
+        }
+        h5{
+            text-align: center;
+        }
+
+
+        @keyframes boy {
+            from{
+                transform: translate(-550px, 290px);
+
+            }
+            to{
+                transform: translate(183px, 290px);
+            }
+        }
+
+        @keyframes girl {
+            from{
+                transform: translate(1000px, 286px);
+            }
+            to{
+                transform: translate(275px, 286px);
+            }
+        }
+
+        @keyframes slice{
+            0%{
+                transform: translateY(800px);
+            }
+            40%{
+                transform: translate(208px, 292px) rotate(0deg);
+            }
+            50%{
+                transform: translate(208px, 292px) rotate(60deg);
+            }
+            60%{
+                transform: translate(208px, 292px) rotate(0deg);
+            }
+            70%{
+                transform: translate(208px, 292px) rotate(60deg);
+            }
+            80%{
+                transform: translate(208px, 292px) rotate(0deg);
+            }
+            90%{
+                transform: translate(208px, 292px) rotate(60deg);
+            }
+            100%{
+                transform: translate(208px, 292px) rotate(0deg);
+            }
+        }
+
+        @keyframes toLeft {
+            0%{
+                transform: translateX(0px);
+            }
+            80%{
+                transform: translateX(0px);
+            }
+            100%{
+                transform: translateX(-100px);
+            }
+        }
+        @keyframes toRight {
+            0%{
+                transform: translateX(0px);
+            }
+            80%{
+                transform: translateX(0px);
+            }
+            100%{
+                transform: translateX(100px);
+            }
+        }
+        @keyframes ffa{
+            0%,
+            80%{
+                transform: translateY(500px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+
+        /* this is minify */ 
+        /* .room{width:600px;height:500px;background-image:url(./img/Capture.png);background-repeat:no-repeat;background-size:cover;background-position:bottom;margin:150px auto;transition:.5s;position:relative;overflow:hidden}.fa-ppl,.knife,.ppl-boy,.ppl-girl{position:absolute}.fa,.knife,.ppl{width:100px}.ppl-boy{transform:translate(183px,290px);animation:3s linear boy}.ppl-girl{transform:translate(275px,286px);animation:3s linear girl}.knife{transform:translate(208px,292px);animation:8s linear slice}.boy{transform:translateX(-100px);animation:10s linear toLeft}.girl{transform:translateX(100px);animation:10s linear toRight}.fa-ppl{width:100%;height:100%;background-color:#fcfcfc;display:flex;justify-content:center;align-items:center;transform:translateY(0);animation:12.5s linear ffa}h5{text-align:center}@keyframes boy{from{transform:translate(-550px,290px)}to{transform:translate(183px,290px)}}@keyframes girl{from{transform:translate(1000px,286px)}to{transform:translate(275px,286px)}}@keyframes slice{0%{transform:translateY(800px)}100%,40%,60%,80%{transform:translate(208px,292px) rotate(0)}50%,70%,90%{transform:translate(208px,292px) rotate(60deg)}}@keyframes toLeft{0%,80%{transform:translateX(0)}100%{transform:translateX(-100px)}}@keyframes toRight{0%,80%{transform:translateX(0)}100%{transform:translateX(100px)}}@keyframes ffa{0%,80%{transform:translateY(500px)}100%{transform:translateY(0)}}
+        */    
+    </style>
+</head>
+<body>
+    <div class="room">
+        <div class="ppl-boy">
+            <img class="ppl boy" src="./img/boy.png" alt="">
+        </div>
+        <div class="ppl-girl">
+            <img class="ppl girl" src="./img/girl.png" alt="">
+        </div>
+        <img class="knife" src="./img/knife.png" alt="">
+        <div class="fa-ppl">
+            <div>
+                <img class="fa" src="./img/fa.png" alt="">
+                <h5>fa is the best</h5>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
