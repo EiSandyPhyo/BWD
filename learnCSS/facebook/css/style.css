@@ -178,3 +178,57 @@ body{
     color: var(--text);
     font-weight: 900;
 }
+
+/* fb-body */
+.fb-body{
+    display: flex;
+}
+.left-aside{
+    width: 25%;
+}
+.news-feed{
+    width: 50%;
+}
+.my-day-list{
+    margin-top: 20px;
+}
+.my-day{
+    width: 120px;
+    height: 200px;
+    overflow: hidden;
+    background-size: 170%;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.my-day-owner{
+    width: 30px;
+    height: 30px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feather-plus{
+    font-size: 15px;
+    font-weight: bolder;
+}
+.my-day-text{
+    color: var(--text-light);
+    font-weight: bolder;
+}
+.add-post{
+
+}
+.post-list{
+
+}
+.chat-box{
+    width: 25%;
+    
+}
