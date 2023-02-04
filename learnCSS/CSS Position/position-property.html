@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+        .h-color{
+            color: goldenrod;
+        }
+        .static{
+            position: static;
+            left: 50px;
+            top: 100px;
+            border: 2px solid saddlebrown;
+        }
+        .relative{
+            position: relative;
+            left: 50px;
+            border: 2px solid salmon;
+        }
+        .fixed{
+            position: fixed;
+            border: 2px solid purple;
+            bottom: 0; /*top*/
+            left: 30px; /*right*/
+            /*width: 300px;*/
+        }
+        .relative2{
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border: 3px solid #73AD21;
+        }
+        .absolute{
+            position: absolute;
+            border: 3px solid #73AD21;
+            top: 80px;
+            right: 0;
+            width: 200px;
+            height: 100px;
+        }
+        .sticky{
+            position: sticky;
+            background-color: peru;
+            border: 2px solid black;
+            top: 0px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Position: <span class="h-color">Static</span>;</h1>
+    <p>
+        An element with postion: Static; is not positioned in any special way; it is always positioned according to the normal flow of the page:
+    </p>
+    <div class="static">
+        This div element has position: static;
+    </div>
+    
+    <h1>Position: <span class="h-color">Relative</span>;</h1>
+    <p>
+        An element with position: Relative; is positioned relative to its normal position:
+    </p>
+    <div class="relative">
+        This div element has position: relative;
+    </div>
+
+    <h1>Position: <span class="h-color">Fixed</span>;</h1>
+    <p>
+        An element with postion: Fixed; is positioned relative to the viewport, which means it always stays in the same palce even if the page is scrolled:
+    </p>
+    <div class="fixed">
+        This div element has position: fixed;
+    </div>
+
+    <h1>Position: <span class="h-color">Absolute</span>;</h1>
+    <p>
+        An element with postion: Absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+        <br>
+        However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+        <br>
+        <b>Note:</b> Absolute positioned elements are removed from the normal flow, and can overlap elements.
+        <br>
+        Here is a simple example:
+    </p>
+    <div class="relative2">
+        This div element has position: relative;
+        <div class="absolute">
+            This div element has position: absolute;
+        </div>
+    </div>
+
+    <h1>Position: <span class="h-color">Sticky</span>;</h1>
+    <p>
+        Try to <b>scroll inside this frame to understand how sticky positioning works.</b>
+    </p>
+    <div class="sticky">
+        I'm Sticky!!
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia, quas ipsa veritatis, dignissimos corporis tempora earum repellat illum totam illo eos temporibus in ut magni? Repudiandae inventore tempora excepturi.
+    </p>
+
+
+    <br>
+    
+
+</body>
+</html>
