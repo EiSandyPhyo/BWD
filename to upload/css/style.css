@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+}
+a.i{
+    text-align: center;
+}
+.i{
+    
+    display: block;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
