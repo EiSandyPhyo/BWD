@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Sizing: Border-box</title>
+    <style>
+        .div1{
+            width: 300px;
+            height: 100px;
+            border: 1px solid blue;
+        }
+        .div2{
+            width: 300px;
+            height: 100px;
+            padding: 50px;
+            border: 1px solid red;
+        }
+        .div3{
+            width: 300px;
+            height: 100px;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+        .div4{
+            width: 300px;
+            height: 100px;
+            padding: 50px;
+            border: 1px solid red;
+            box-sizing: border-box;
+            /*overflow: hidden;*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Before Using it</h1>
+    <div class="div1">
+        <p>This div is smaller (width is 300px and height is 100px).</p>
+    </div>
+    <div class="div2">
+        <p>This div is bigger (width is also 300px and height is 100px).</p>
+    </div>
+
+    <h1>After Using it</h1>
+    <div class="div3">
+        <p>Both divs are the same size now!</p>
+    </div>
+    <div class="div4">
+        <p>Hooray!</p>
+    </div>
+</body>
+</html>
