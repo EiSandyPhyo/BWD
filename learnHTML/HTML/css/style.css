@@ -1,0 +1,61 @@
+table{
+    width: 100%;
+}
+table,tr,th,td{
+    border: 1px solid orangered;
+    border-collapse: collapse; /* table borders should collapse into a single border */
+    text-align: center;
+    padding: 10px;
+}
+ul{
+    list-style-type: circle;
+}
+h2{
+    color: brown;
+}
+.h2{
+    color: black;
+}
+body{
+    /* background-color: #FFFFFF;
+    background-image: url("../photos/beachday.png");
+    background-repeat: no-repeat;
+    background-position: center top; */
+    
+    background: #FFFFFF url(../photos/beachday.png) no-repeat center top;
+    background-attachment: fixed;
+}
+.ptag{
+    line-height: 2.5;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+    text-indent: 40px;
+}
+#container{
+    column-count: 3;
+    column-gap: 5px;
+    column-rule: 1px solid plum;
+}
+#container h1{
+    column-span: all;
+}
+img{
+    position: sticky;
+    top: 0;
+}
+#position{
+    border: 3px solid goldenrod;
+    position: relative;
+    width: 500px;
+    height: 300px;
+}
+.p_child{
+    border: 2px solid palevioletred;
+    position: absolute;
+    top:100px;
+    left: 50px;
+}
+#child{
+    font-size: 100px;
+    color: peru;
+}

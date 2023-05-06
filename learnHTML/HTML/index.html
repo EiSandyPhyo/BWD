@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML,CSSDocument">
+    <meta name="author" content="EiSandy">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample HTML Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h2>&lt;&excl;-- H Tag --&gt;</h2>
+    <h1>Heading1</h1>
+    <h2 class="h2">Heading2</h2>
+    <h3>Heading3</h3>
+    <h4>Heading4</h4>
+    <h5>Heading5</h5>
+    <h6>Heading6</h6>
+    <hr>
+
+    <h2>&lt;&excl;-- P Tag --&gt;</h2>
+    <p class="ptag">
+        Lorem ipsum <mark>dolor</mark>, sit amet consectetur adipisicing elit. <del>Blanditiis</del> fuga vitae id nulla numquam nisi, tempora earum cum, consequatur recusandae <i>dolore</i> officiis. Aliquid eum numquam, accusamus itaque quasi minima quae autem animi, reiciendis atque ut vitae inventore soluta quidem temporibus deleniti perferendis dignissimos rerum molestiae doloremque excepturi veritatis id eligendi. Expedita, eveniet distinctio? Eum, dolores. <strong>Maiores</strong> quo ex non blanditiis temporibus harum libero iusto quia, autem quis! Eius assumenda accusamus voluptatem provident repudiandae sunt? Mollitia porro exercitationem modi at inventore. Non, velit! Dignissimos provident alias ipsa distinctio expedita vitae accusamus repellendus in. Natus fugit tempore provident, quae laudantium repudiandae sequi. <b>h<sup>2</sup></b> 
+    </p>
+    <hr>
+
+    <h2>&lt;&excl;-- Img Tag --&gt;</h2>
+                <!-- value -->
+    <img src="photos/onlinelearning.png" alt="Online Learning" width="50%" height="100%" title="OnlineLearning">
+    <!-- property -->
+    <br>
+
+    <h2>&lt;&excl;-- Video Tag --&gt;</h2>
+    <video src="https://bit.ly/3pGmUPp" width="50%" height="50%" controls></video><br>
+
+    <h2>&lt;&excl;-- iframe --&gt;</h2>
+    <!-- <embed src="" type=""> -->
+    <iframe width="50%" height="50%" src="https://www.youtube.com/embed/ZxKM3DCV2kE" title="Web Development Full Course - 22 Hour Course | Learn Full Stack Web Development From Scratch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <center><h2>&lt;&excl;-- A Href Tag --&gt;</h2></center>
+    <a href="https://www.google.com" target="_blank"><center>GO To <mark>Google</mark></center></a>
+    <br>
+    <br>
+
+    <!-- HTML Table -->
+    <h2>&lt;&excl;-- HTML Table --&gt;</h2>
+    <table>
+        <caption><h4> Student Info </h4></caption>
+        <thead>
+            <tr>
+            <td>Name</td>
+            <td>Gender</td>
+            <td>Age</td>
+            <td colspan="2">Ph No</td>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Aung</td>
+                <td>Female</td>
+                <td>22</td>
+                <td>0945678656</td>
+                <td>0945644656</td>
+            </tr>
+            <tr>
+                <td>Mya Mya</td>
+                <td rowspan="2">Male</td>
+                <td>20</td>
+                <td>0945673556</td>
+                <td>0945645656</td>
+            </tr>
+            <tr>
+                <td>Hnin Hnin</td>
+                <td>21</td>
+                <td>0943673556</td>
+                <td>0945647656</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+
+    <!-- HTML Lists -->
+    <h2>&lt;&excl;-- HTML Lists --&gt;</h2>
+    <!-- Ordered Lists -->
+    <ol type="A">
+        <li>Yangon</li>
+        <li>Mandalay</li>
+        <li>Pakokku
+            <ol>
+                <li>A</li>
+                <li>B</li>
+            </ol>
+        </li>
+    </ol>
+    <!-- UnOrdered Lists -->
+    <ul>
+        <li>Yangon</li>
+        <li>Mandalay</li>
+        <li>Pakokku
+            <ol>
+                <li>A</li>
+                <li>B</li>
+            </ol>
+        </li>
+    </ul>
+    <!-- Description Lists --> 
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- Hot Coffee</dd>
+    </dl>
+    <br>
+
+    <!-- HTML Forms -->
+    <!-- http://127.0.0.1:5500/submit?eisandy=eisandy&eisandy=eisandy%40gmail.com&ygn=mdy -->
+    <h2>&lt;&excl;-- HTML Forms --&gt;</h2>
+    <form method="GET" action="/submit">
+        <fieldset>
+            <legend>HTML Form</legend>
+            <label for="name">Full Name: </label>
+            <input type="text" name="eisandy" placeholder="Enter your name" id="name" autofocus required><br>
+            <label for="email">Email: </label>
+            <input type="email" name="eisandy" placeholder="Enter your email" id="email" required><br>
+            <label for="password">Password: </label>
+            <input type="password" placeholder="Enter your password" id="password"><br>
+            <label for="no">Ph Number: </label>
+            <input type="number" placeholder="Enter your PhNo." id="no"><br>
+            <label for="color">Color: </label>
+            <input type="color" id="color"><br>
+            <label for="date">Date: </label>
+            <input type="date" id="date"><br>
+            <label for="file">File: </label>
+            <input type="file" id="file"><br>
+            <label for="city">Select City: </label>
+            <select name="city" id="city">
+                <option value="mdy">Mandalay</option>
+                <option value="ygn">Yangon</option>
+                <option value="pku">Pakokku</option>
+            </select><br>
+            <label for="tsp">Select Township: </label>
+            <select name="" id="">
+                <optgroup label="Yangon">
+                    <option value="hty">HlaingTharyar</option>
+                    <option value="is">Insein</option>
+                </optgroup>
+                <optgroup label="Mandalay">
+                    <option value="act1">AungChanTharI</option>
+                    <option value="act2">AungChanTharII</option>
+                </optgroup>
+            </select><br>
+            <label for="checkbox">Checkbox: </label>
+            <input type="checkbox" name="cb" value="checkbox" id="checkbox">AA
+            <input type="checkbox" name="cb" value="checkbox" id="checkbox">BB
+            <input type="checkbox" name="cb" value="checkbox" id="checkbox">CC<br>
+            <label for="radiobutton">RadioButton: </label>
+            <input type="radio" name="radio" value="radiobutton" id="radiobutton">AA
+            <input type="radio" name="radio" value="radiobutton" id="radiobutton">BB
+            <input type="radio" name="radio" value="radiobutton" id="radiobutton">CC<br>
+            <label for="textarea">TextArea: </label><br>
+            <textarea name="textarea" id="textarea" cols="15" rows="4"></textarea><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <br>
+    <br>
+
+    <!-- HTML Emojis & Entities --> 
+    <a href="https://www.htmlquick.com/reference/character-entity-reference.html">
+        HTML Entities Reference
+    </a> 
+    <h4>This is copy right sign - &copy;</h4>
+    <h4>This is copy Euro sign - &euro;</h4>
+    <h4>This is copy Excl sign - &excl;</h4>
+    <br>
+
+    <!-- Block & Inline Element -->
+    <h2>&lt;&excl;-- Block Level Element --&gt;</h2>
+    <h4>Hello AungAung</h4>
+    <h4>Hello MgMg</h4>
+    <p>&lt;form&gt; &lt;/form&gt;</p>
+    <p>&lt;list&gt; &lt;/list&gt;</p>
+    <p>&lt;table&gt; &lt;/table&gt;</p>
+
+    <h2>&lt;&excl;-- Inline Level Element --&gt;</h2>
+    <span>Hello Aung Aung</span><span>Hello Mg Mg</span>
+    <button>ButtonA</button>
+    <button>ButtonB</button>
+    <br>
+
+    <!-- Sematic Element -->
+    <h1>this is heading</h1>
+    <p>this is paragraph</p>
+    <article>AA</article><br>
+
+    <!-- Non-Sematic Element -->
+    <span>this is non-sematic element</span>
+    <div>this is div</div>
+
+    <!-- Multi Column like newspaper -->
+    <h2>&lt;&excl;-- Multi Column --&gt;</h2>
+    <div id="container">
+        <h1>This is Title</h1>
+        <h3>This is Sub-Title</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam neque blanditiis beatae cumque error, quidem aut excepturi! Debitis, expedita. Nulla doloribus aliquam illum hic repellendus reprehenderit tempore corporis consequuntur delectus dignissimos amet adipisci ipsa culpa quasi omnis perspiciatis in eius, doloremque enim fugit? Maxime velit quaerat illo ipsam ex doloribus ipsa quos iste accusamus et tempore perferendis impedit distinctio in, fugiat, dicta asperiores. Amet voluptatibus ipsum ea quisquam nobis. Soluta ex quos inventore optio rem ullam fuga. Quidem error maiores, provident nobis ab rerum quas, corporis impedit perferendis accusantium doloremque obcaecati suscipit voluptatem maxime architecto itaque dolor omnis minus laboriosam.</p>
+    </div>
+
+    <!-- CSS Position -->
+    <h2>&lt;&excl;-- Position --&gt;</h2>
+
+    <div id="position">
+        <h1 class="p_child">
+            <i id="child" class="fa fa-child" aria-hidden="true"></i> Hello World
+        </h1>
+    </div>
+
+    <div>
+        <img src="https://cdn.dribbble.com/users/876183/screenshots/4178051/_______.gif" alt="hardworking programmer girl">
+    </div>
+
+</body>
+</html>
